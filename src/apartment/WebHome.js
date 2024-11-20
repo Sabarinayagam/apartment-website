@@ -116,7 +116,7 @@ const WebHome = () => {
         <img src={banner}></img>
       </div>
       {/* 3 /////////////////////////////////////////////////////*/}
-      {/* <div className="Whyinvest" data-aos="zoom-in">
+      <div className="Whyinvest" data-aos="zoom-in">
         <div className="Whyinvest1">
           <h1>Why invest in Apartments ?</h1>
           <p>
@@ -126,7 +126,7 @@ const WebHome = () => {
             himenaeos.
           </p>
         </div>
-      </div> */}
+      </div>
       <div className="container">
         <div className="box1" data-aos="fade-right" data-aos-duration="1000">
           <div className="left">
