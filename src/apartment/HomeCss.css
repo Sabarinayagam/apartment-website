@@ -1,0 +1,762 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+:root {
+  --primary-color: #372c70;
+  --secondary-color: ##fffff;
+  --text-color1: #333;
+  --text-color2: #f9f9f9;
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: scroll 10s linear infinite;
+}
+.marquee::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+nav {
+  background-color: var(--text-color2);
+  width: 100%;
+  padding: 0px 0px 0px 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: darkslateblue;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a5959;
+  margin-left: 10px;
+  line-height: 22.5px;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: o;
+  width: 0%;
+  height: 3px;
+  background-color: var(--text-color1);
+  transition: all 0.1s;
+}
+nav a:hover::before {
+  width: 100%;
+}
+.logo {
+  height: 60px;
+  width: 5%;
+  overflow: hidden;
+  object-fit: cover;
+  justify-content: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-line {
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn a {
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  height: 400px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  3 Whyinvest */
+
+.Whyinvest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Whyinvest1 {
+  width: 820px;
+  gap: 0px;
+  opacity: 0px;
+}
+.Whyinvest h1 {
+  background: linear-gradient(90deg, #372c70 -1.68%, #5441ad 100.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: sans-serif;
+  font-size: 51px;
+  font-weight: 800;
+  line-height: 90px;
+  letter-spacing: -3px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.Whyinvest p {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--text-color1);
+}
+
+/* 4 */
+.container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.box1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #372c70;
+  padding: 0px 26px 0px 20px;
+  gap: 8px;
+  border-radius: 0px 200px 200px 0px;
+  opacity: 0px;
+  height: 250px;
+  margin: 0 280px 0 280px;
+  margin-bottom: 80px;
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #372c70;
+  padding: 0px 26px 0px 20px;
+  gap: 8px;
+  border-radius: 200px 0px 0px 200px;
+  opacity: 0px;
+  height: 250px;
+  margin: 0 280px 0 280px;
+  margin-bottom: 80px;
+}
+.imagediv {
+  width: 270px;
+  padding-bottom: 40px;
+}
+.imagediv img {
+  border-radius: 0px 200px 200px 0px;
+  height: 260px;
+}
+.box2 .imagediv img {
+  border-radius: 200px 0px 0px 200px;
+  height: 280px;
+}
+.right {
+  margin-left: 20px;
+  padding-right: 50px;
+}
+.rightbox {
+  width: 100%;
+}
+.rightbox p {
+  color: var(--text-color2);
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 5px;
+}
+.right h2 {
+  color: wheat;
+  font-weight: 200;
+  font-size: 30px;
+  /*  */
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 14px;
+}
+/*  4 Booming */
+
+.Booming {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 5px;
+  background-image: url(../apartment/Assets/footerbg.jpg);
+}
+.Booming .Whyinvest h1,
+.Booming .Whyinvest p {
+  font-family: sans-serif;
+  padding: 0px 20px 0px 20px;
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Booming .Whyinvest h1 {
+  font-family: sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 30px;
+}
+
+/*  */
+.nav2 {
+  background-color: #372c70;
+  width: 100%;
+  padding: 2%;
+  color: darkslateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%) 1;
+}
+
+.nav2 li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.nav2 a {
+  text-decoration: none;
+  color: var(--text-color2);
+  margin-left: 70px;
+  line-height: 22.5px;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.nav2 a::before {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: o;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  transition: all 0.3s ease;
+}
+.nav2 a:hover::before {
+  width: 100%;
+}
+.nav2 a:hover {
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/*  */
+
+.Boomingboxs {
+  margin-top: 30px;
+  padding: 0px 170px 0 170px;
+}
+
+/*  */
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 400px;
+}
+.container2 .left {
+  width: 50%;
+  padding-right: 5px;
+}
+.container2 .left h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  font-family: sans-serif;
+}
+.container2 .left p {
+  color: #9188c1;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.container2 .right {
+  width: 50%;
+  height: 100%;
+}
+.container2 .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* key */
+
+.key {
+  height: 780px;
+  width: 100%;
+}
+
+.keydiv p {
+  color: var(--text-color1);
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.keydiv .Whyinvest h1 {
+  font-weight: 900;
+  background: linear-gradient(90deg, #372c70 -1.68%, #5441ad 100.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.keydiv .Whyinvest h1 {
+  font-family: sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 80px 0px 80px;
+}
+.cardimg {
+  height: 300px;
+  width: 100%;
+  margin-top: 0px;
+}
+.cardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.cardh1 {
+  color: var(--text-color1);
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-top: 15px;
+  font-family: sans-serif;
+}
+.flex-item {
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+  text-align: start;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3%;
+  border-radius: 5%;
+  padding: 10px;
+}
+.carousel {
+  padding: 30px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+
+footer {
+  background-image: url(../apartment/Assets/footerbg.jpg);
+  padding: 40px 100px 20px 100px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.footerdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerdiv p {
+  color: #e3dfff;
+  padding: 3px;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+.copyrightcon {
+  margin: 20px 0px 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyrightcon p {
+  color: var(--text-color2);
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.footerlogocont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.footerlogodiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  margin-left: 20px;
+}
+.footerlogodiv p {
+}
+.logo2div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  right: 0;
+  margin-right: 0px;
+}
+
+/*  media  */
+
+@media all and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    padding: 10px 0;
+  }
+  ul {
+    text-align: center;
+    padding: 0;
+    display: none;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 0px 0px 0px 20px;
+    height: 40px;
+    width: 10%;
+    overflow: hidden;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 33px;
+  }
+
+  .showmenu {
+    display: block;
+    width: 200px;
+  }
+  /* banner */
+  .banner {
+    height: 300px;
+  }
+  /* .why  */
+  .Whyinvest h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .Whyinvest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .Whyinvest1 {
+    width: 820px;
+  }
+  .Whyinvest p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-color1);
+    margin: 0px 30px 0px 22px;
+  }
+  /* 4  */
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .box1,
+  .box2 {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 20px 40px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .imagediv {
+    width: 100%;
+  }
+
+  .imagediv img,
+  .box2 .imagediv img {
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+  }
+  .box2 .imagediv img {
+    margin: 50px 30px -30px 0px;
+  }
+
+  .right {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .right h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .rightbox p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  /* booing */
+
+  .Booming {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 5px;
+  }
+  .Booming .Whyinvest h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .nav2 {
+    display: none;
+  }
+
+  .Boomingboxs {
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .container2 .left,
+  .container2 .right {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .container2 .left h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .container2 .left p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .container2 .right img {
+    border-radius: 12px;
+    height: auto;
+    max-width: 100%;
+  }
+  /* key */
+
+  .key {
+    height: auto;
+    padding: 20px;
+  }
+
+  .keydiv p {
+    font-size: 14px;
+  }
+
+  .keydiv .Whyinvest h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+
+  .cardimg {
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .cardimg img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .cardh1 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .flex-item {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  .icon {
+    justify-content: flex-start;
+    padding: 5px;
+    display: none;
+  }
+  /* footer */
+
+  footer {
+    padding: 20px 30px 15px 30px;
+    margin-top: 30px;
+    background-size: cover;
+  }
+
+  .footerdiv {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .footerdiv p {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  .copyrightcon {
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: flex-start;
+    border-top: 1px solid #e3dfff;
+    padding-top: 10px;
+  }
+
+  .copyrightcon p {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footerlogocont {
+    display: none;
+    width: 80px;
+    justify-content: center;
+  }
+
+  .footerlogodiv {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .footerlogodiv p {
+    font-size: 12px;
+  }
+
+  .logo2div img {
+    width: 80%;
+    object-fit: contain;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .box1,
+  .box2 {
+    padding: 15px;
+    margin: 0 10px 30px;
+    border-radius: 15px;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  .rightbox p {
+    font-size: 9px;
+  }
+}
