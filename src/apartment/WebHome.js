@@ -116,6 +116,7 @@ const WebHome = () => {
         <img src={banner}></img>
       </div>
       {/* 3 /////////////////////////////////////////////////////*/}
+
       <div className="Whyinvest" data-aos="zoom-in">
         <div className="Whyinvest1">
           <h1>Why invest in Apartments ?</h1>
@@ -128,6 +129,7 @@ const WebHome = () => {
         </div>
       </div>
       <div className="container">
+        {/* <div className="box1"> */}
         <div className="box1" data-aos="fade-right" data-aos-duration="1000">
           <div className="left">
             <div className="imagediv">
@@ -147,6 +149,7 @@ const WebHome = () => {
           </div>
         </div>
 
+        {/* <div className="box2"> */}
         <div className="box2" data-aos="fade-left" data-aos-duration="1000">
           <div className="right">
             <div className="rightbox">
@@ -166,6 +169,7 @@ const WebHome = () => {
           </div>
         </div>
 
+        {/* <div className="box1"> */}
         <div className="box1" data-aos="fade-right" data-aos-duration="1000">
           <div className="left">
             <div className="imagediv">
@@ -185,7 +189,9 @@ const WebHome = () => {
           </div>
         </div>
       </div>
+
       {/* 4 ///////////////////////////////// */}
+
       <div className="Booming">
         <div className="Whyinvest" data-aos="zoom-in">
           <div className="Whyinvest1">
@@ -258,7 +264,9 @@ const WebHome = () => {
           </div>
         </div>
       </div>
+
       {/* Key amenities /////////////////////////////////////////////*/}
+
       <div className="Key">
         <div className="keydiv" data-aos="zoom-in">
           <div className="Whyinvest">
@@ -273,51 +281,6 @@ const WebHome = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex-container">
-          <div className="flex-item" class="icon">
-            <Button
-              variant="outlined"
-              startIcon={<ArrowBackIcon />}
-              sx={{
-                borderRadius: "50%",
-                color: "#372C70",
-                borderColor: "#372C70",
-                padding: "12px 0px 12px 9px",
-              }}
-            ></Button>
-          </div>
-          <div className="flex-item">
-            <div className="cardimg">
-              <img src={card1}></img>
-            </div>
-            <h1 className="cardh1">Indoor games</h1>
-          </div>
-          <div className="flex-item">
-            <div className="cardimg">
-              <img src={card2}></img>
-            </div>
-            <h1 className="cardh1">gymnasium</h1>
-          </div>
-          <div className="flex-item">
-            <div className="cardimg">
-              <img src={card3}></img>
-            </div>
-            <h1 className="cardh1">Banquet hall</h1>
-          </div>
-          <div className="flex-item" class="icon">
-            <Button
-              variant="outlined"
-              startIcon={<ArrowForwardIcon />}
-              sx={{
-                borderRadius: "50%",
-                color: "#372C70",
-                borderColor: "#372C70",
-                padding: "12px 0px 12px 9px",
-              }}
-            ></Button>
-          </div>
-        </div> */}
         <div className="carousel">
           <Carousel responsive={responsive}>
             <div className="flex-item">
@@ -352,8 +315,10 @@ const WebHome = () => {
             </div>
           </Carousel>
         </div>
-        {/*  */}
       </div>
+
+      {/* footer ///////////////////////////// */}
+
       <footer>
         <div className="footerdiv">
           <div className="cont">
@@ -386,10 +351,7 @@ const WebHome = () => {
             <p>Copyright © 2024 || Sabari Nayagam All Rights Reserved</p>
 
             <div className="footerlogocont">
-              <div className="footerlogodiv">
-                {/* <p>Designby</p> */}
-                {/* <img src={logo2}></img> */}
-              </div>
+              <div className="footerlogodiv"></div>
             </div>
           </div>
         </div>
